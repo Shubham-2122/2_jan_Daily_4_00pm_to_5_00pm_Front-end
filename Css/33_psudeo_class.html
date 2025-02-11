@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* :  */
+        ul li:first-child{
+            background-color: red;
+        }
+        ul li:last-child{
+            background-color: blue;
+        }
+        /* top */
+        ul li:nth-child(4){
+            background-color: aqua;
+        }
+        /* bottom last */
+        ul li:nth-last-child(3){
+            background-color: green;
+        }
+        ul li:nth-child(even){
+            background-color: lightcoral;
+        }
+        ul li:nth-child(odd){
+            background-color: navy;
+        }
+        .main{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            transition: 1s;
+        }
+        .main:hover{
+            background: red;
+            border-radius: 50%;
+            transform: translate(100px);
+        }
+        input{
+            margin-top: 50px;
+            border: none;
+            background-color: aqua;
+            padding: 20px;
+            outline: none;
+        }
+        input:focus{
+            background-color: lightcoral;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- psudeo-class (:)
+    psudeo-element  (::) -->
+
+    <ul>
+        <li>One</li>
+        <li>One</li>
+        <li>One</li>
+        <li>One</li>
+        <li>One</li>
+        <li>One</li>
+        <li>One</li>
+        <li>One</li>
+        <li>One</li>
+    </ul>
+
+    <div class="main">
+
+    </div>
+
+    <input type="text" placeholder="Enter your name">
+
+</body>
+</html>
