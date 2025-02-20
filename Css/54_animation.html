@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: anima 3s infinite; */
+            animation: num2 3s infinite;
+        }
+        @keyframes anima {
+            /* start */
+            from{
+                background-color: red;
+                border-radius: 50%;
+            }
+            /* end */
+            to{
+                background-color: lightgreen;
+                border-radius: 100%;
+                transform: translate(100px);
+            }
+        }
+
+        /* mutliple break 0 123456 100% */
+        @keyframes num2 {
+            0%{
+                background: red;
+            }
+            25%{
+                background: lawngreen;
+                border-radius: 20px;
+            }
+            50%{
+                background: linear-gradient(red,green);
+                border-radius: 50px;
+            }
+            75%{    
+                background: linear-gradient(red,green,blue);
+                transform: scale(1.2);
+            }
+            100%{
+                background: lightcoral;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- animation :- @keyframe -->
+
+    <div class="main">
+
+    </div>
+</body>
+</html>
