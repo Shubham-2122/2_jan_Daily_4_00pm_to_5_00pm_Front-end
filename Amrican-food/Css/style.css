@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utlites class */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header start */
+.header {
+    background-color: #3d5f00;
+}
+
+.navabar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 70px;
+}
+
+.lists .list {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.list .nav-a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Roboto";
+    color: white;
+}
+
+.icon i {
+    color: white;
+    font-size: 24px;
+}
+
+.main-content {
+    background-image: url("/Images/main.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.data {
+    letter-spacing: 0px;
+    color: #3d5f00;
+    font-family: "Alegreya Sans";
+    padding: 70px 0;
+}
+
+.data .h1-header {
+    font-size: 67px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.data .h3-header {
+    font-size: 54px;
+    font-weight: 500;
+}
+
+.data .hr {
+    width: 300px;
+    margin: 10px 0;
+}
+
+.data .p-header {
+    width: 40%;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin: 20px 0;
+}
+
+.data .btn-header{
+    background-color: #3d5f00;
+    border: none;
+    padding: 10px 20px;
+    border-radius:  20px 0 20px 0;
+    color: white;
+} 
+.data .btn-icon{
+    border: none;
+    padding: 10px;
+    background-color: #3d5f00;
+    border-radius:  10px 0 10px 0;
+    margin-left: 10px;
+    color: white;
+}
+/* header end */
