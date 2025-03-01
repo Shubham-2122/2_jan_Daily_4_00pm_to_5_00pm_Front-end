@@ -39,9 +39,15 @@
     color: white;
 }
 
-.icon i {
+.icon .search {
     color: white;
     font-size: 24px;
+}
+
+.icon .bar {
+    color: white;
+    font-size: 24px;
+    display: none;
 }
 
 .main-content {
@@ -58,13 +64,14 @@
 }
 
 .data .h1-header {
-    font-size: 67px;
+    /* min and (vw) max */
+    font-size: clamp(24px, 7vw, 67px);
     text-transform: uppercase;
     font-weight: 800;
 }
 
 .data .h3-header {
-    font-size: 54px;
+    font-size: clamp(20px, 7vw, 54px);
     font-weight: 500;
 }
 
@@ -76,24 +83,124 @@
 .data .p-header {
     width: 40%;
     font-size: 21px;
+    font-size: clamp(18px, 3.2vw, 21px);
     font-weight: 400;
     font-family: "Roboto";
     margin: 20px 0;
 }
 
-.data .btn-header{
+.data .btn-header {
     background-color: #3d5f00;
     border: none;
     padding: 10px 20px;
-    border-radius:  20px 0 20px 0;
+    border-radius: 20px 0 20px 0;
     color: white;
-} 
-.data .btn-icon{
+}
+
+.data .btn-icon {
     border: none;
     padding: 10px;
     background-color: #3d5f00;
-    border-radius:  10px 0 10px 0;
+    border-radius: 10px 0 10px 0;
     margin-left: 10px;
     color: white;
 }
+
 /* header end */
+
+/* About start */
+#About{
+    padding: 30px 0;
+}
+.aboutus {
+    text-align: center;
+    color: #3d5f00;
+    font-family: "Roboto";
+    margin: 30px 0;
+}
+
+.aboutus .h2-about {
+    /* font-size: 50px; */
+    font-size: clamp(20px, 7vw, 50px);
+    font-weight: 700;
+}
+
+.aboutus .p-about {
+    font-size: 25px;
+    font-size: clamp(18px, 3vw, 25px);
+    width: 60%;
+    font-weight: 400;
+    margin: 20px auto;
+}
+
+.about-main .row {
+    display: flex;
+}
+
+.about-main .row .col {
+    /* border: 2px solid; */
+    width: 50%;
+}
+
+.about-content {
+    color: #3d5f00;
+    font-family: "Roboto";
+}
+
+.about-content .h3-about {
+
+    font-size: clamp(20px, 7vw, 54px);
+    font-weight: 500;
+}
+
+.about-content .para {
+    font-size: clamp(18px, 3vw, 25px);
+    font-weight: 400;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.about-content .para1 {
+    font-size: clamp(18px, 3vw, 25px);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.about-content .btn-header {
+    background-color: #3d5f00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px 0 20px 0;
+    color: white;
+}
+
+.about-content .btn-icon {
+    border: none;
+    padding: 10px;
+    background-color: #3d5f00;
+    border-radius: 10px 0 10px 0;
+    margin-left: 10px;
+    color: white;
+}
+
+.about-main .abouts {
+    /* background: url("/Images/about.png"); */
+    background: linear-gradient(rgba(143,146,59,0.5),rgba(143,146,59,0.5)),url("/Images/about.png");
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    height: 400px;
+}
+
+.abouts .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: red;
+    z-index: 2;
+}
+
+/* About end */
