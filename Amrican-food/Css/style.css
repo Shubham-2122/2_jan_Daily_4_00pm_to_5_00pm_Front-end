@@ -109,9 +109,10 @@
 /* header end */
 
 /* About start */
-#About{
+#About {
     padding: 30px 0;
 }
+
 .aboutus {
     text-align: center;
     color: #3d5f00;
@@ -135,6 +136,7 @@
 
 .about-main .row {
     display: flex;
+    /* flex-wrap: wrap; */
 }
 
 .about-main .row .col {
@@ -185,7 +187,8 @@
 
 .about-main .abouts {
     /* background: url("/Images/about.png"); */
-    background: linear-gradient(rgba(143,146,59,0.5),rgba(143,146,59,0.5)),url("/Images/about.png");
+    background: linear-gradient(rgba(143, 146, 59, 0.5), rgba(143, 146, 59, 0.5)), url("/Images/about.png");
+    background-size: 100% 100%;
     width: 70%;
     margin: 0 auto;
     position: relative;
@@ -203,4 +206,158 @@
     z-index: 2;
 }
 
+.abou1 {
+    margin-top: 100px;
+}
+
 /* About end */
+
+
+/* service start */
+.service {
+    text-align: center;
+    color: #3d5f00;
+    font-family: "Roboto";
+    margin: 30px 0;
+}
+
+.service .h2-service {
+    /* font-size: 50px; */
+    font-size: clamp(20px, 7vw, 50px);
+    font-weight: 700;
+}
+
+.service .p-service {
+    font-size: 25px;
+    font-size: clamp(18px, 3vw, 25px);
+    width: 60%;
+    font-weight: 400;
+    margin: 20px auto;
+}
+
+.service-main {
+    margin: 20px 0;
+}
+
+.service-main .row {
+    display: flex;
+    gap: 30px;
+}
+
+.service-main .row .col-7 {
+    width: 70%;
+    /* border: 2px solid; */
+}
+
+.service-main .row .col-3 {
+    width: 30%;
+    /* border: 2px solid; */
+}
+
+.service-card .service-data {
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(20px, 6.7vw, 50px);
+    color: #3d5f00;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+.service-card .p-card {
+    font-size: clamp(18px, 3vw, 25px);
+    color: #3d5f00;
+    font-weight: 400;
+    font-family: "Roboto";
+    width: 90%;
+    margin: 20px 0;
+}
+
+.service-card .btn-service {
+    background-color: #3d5f00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px 0 20px 0;
+    color: white;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+}
+
+/* service end */
+
+/* price start */
+.price {
+    text-align: center;
+    color: #3d5f00;
+    font-family: "Roboto";
+    margin: 30px 0;
+}
+
+.price .h2-price {
+    /* font-size: 50px; */
+    font-size: clamp(20px, 7vw, 50px);
+    font-weight: 700;
+}
+
+.price .p-price {
+    font-size: 25px;
+    font-size: clamp(18px, 3vw, 25px);
+    width: 60%;
+    font-weight: 400;
+    margin: 20px auto;
+}
+
+.price-main .row {
+    display: flex;
+    gap: 40px;
+}
+
+.price-main .row .col {
+    width: 33.33%;
+    /* border: 2px solid; */
+
+}
+
+.price-card {
+    background-color: #608b14;
+    text-align: center;
+    font-family: "Roboto";
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.price-card .h3-price {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.price-card .h2-card-price {
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.price-content {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.price-content .h4-price {
+    font-size: 29px;
+    color: #3d5f00;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin: 10px 0;
+}
+.price-content .btn-price{
+    background-color: #3d5f00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px 0 20px 0;
+    color: white;
+    margin-top: 20px;
+}
+
+/* price end */

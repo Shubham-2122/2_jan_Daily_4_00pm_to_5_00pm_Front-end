@@ -23,6 +23,35 @@
     .aboutus .p-about{
         width: 90%;
     }
+    .about-main .row{
+        display: block;
+        /* flex-direction: column; */
+    }
+    .about-main .row .col{
+        width: 100%;
+    }
+    .about-main .abouts{
+        height: 200px;
+        margin-top: 50px;
+    }
+    .service-main .row {
+        display: block;
+        gap: 30px;
+    }
+    .service-main .row .col-7 {
+        width: 100%;
+    }
+    
+    .service-main .row .col-3 {
+        width: 100%;
+    }
+    .service .p-service{
+        width: 90%;
+    }
+    .price .p-price{
+        width: 90%;
+    }
+    
 }
 @media only screen and (max-width:576px) {
     
