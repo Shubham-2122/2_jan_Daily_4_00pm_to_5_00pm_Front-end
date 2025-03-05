@@ -51,6 +51,33 @@
     .price .p-price{
         width: 90%;
     }
+    .price-main .row .col{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .price-main .row{
+        flex-direction: column;
+    }
+    #Footer .row {
+        display: block;
+    }
+    #Footer .row .col-4 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #Footer .row .col-6 {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .col-6 .row .col {
+        width: 100%;
+    }
+    .footer .p-footer{
+        width: 100%;
+    }
     
 }
 @media only screen and (max-width:576px) {
