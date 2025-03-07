@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Dom :- internal js 
+    dom :- document object model  -->
+
+    <!-- internal js -->
+    <h1 id="h1"></h1>
+
+    <h2 id="h2"></h2>
+
+    <script>
+
+        // 1) print console log 
+        // error find
+        console.log("hello javscript");
+        console.log("hello 2");
+        console.log(5+5)
+        console.log(10-6)
+
+
+        // 2) dom method .write 
+        document.write("Hello javascript")
+        document.write("<h2>Hello</h2>")
+
+
+        // 3) select tag and after method 
+        // inner text only for text
+        document.getElementById("h1").innerText = "<i>Hello this js innertext</i>";
+
+        // inner html return HTML allow text
+        document.getElementById("h2").innerHTML = "<i>Hello this javascript innerHTML</i>"
+
+    </script>
+
+</body>
+</html>
