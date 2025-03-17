@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- JavaScript events are actions or occurrences that are detected by the browser, allowing web pages to respond dynamically. Here are some key points about JavaScript events: -->
+
+    <!-- 1) mouse event click,dbclick , hover -->
+    <!-- 2) key boar event  key press , hold -->
+    <!-- 3) form evnt submi  change -->
+    <!-- 4) window -->
+
+    <h1 id="h1"></h1>
+    <button onclick="add_data()">add data</button>
+
+    <script>
+
+        // h1_tag = document.getElementById("h1")
+
+        function add_data(){
+            console.log("hello this data")
+            // document.write("<h4>Hello data</h4>")
+            // h1_tag.innerHTML = "hello javascript"
+            document.getElementById("h1").innerText = "hello this data"
+        }
+    
+
+    </script>
+</body>
+
+</html>
