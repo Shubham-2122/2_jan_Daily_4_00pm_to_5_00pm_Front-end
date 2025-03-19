@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .data{
+            background: linear-gradient(red,green,blue);
+            font-size: 100px;
+            width: 50%;
+            margin: 0 auto;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="addcss()">Addcss</button>
+
+    <button onclick="Removecss()">Removecss</button>
+
+    <button onclick="toggle()">Toggle</button>
+
+    <h1 id="h1">Hello Javascript</h1>
+
+    <script>
+
+        let h1_tag = document.getElementById("h1")
+
+        function addcss(){
+            h1_tag.classList.add("data");
+            console.log("add css data")
+        }
+
+        function Removecss(){
+            h1_tag.classList.remove("data");
+            console.log("remove data")
+        }
+
+        function toggle(){
+            h1_tag.classList.toggle("data");
+            console.log("Toggle data")
+        }
+    </script>
+   
+</body>
+</html>
