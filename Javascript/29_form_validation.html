@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" onsubmit="return validation()">
+        <div>
+            <input type="text" id="nm" placeholder="Enter your name">
+            <span id="nmerr"></span>
+        </div>
+        <div>
+            <input type="text" id="ur" placeholder="Enter your urname">
+            <span id="urerr"></span>
+        </div>
+        <div>
+            <input type="email" id="Em" placeholder="Enter your Email">
+            <span id="emerr"></span>
+        </div>
+        <div>
+            <input type="tel" id="ph" placeholder="Enter your phone">
+            <span id="pherr"></span>
+        </div>
+        <div>
+            <input type="password" id="psw" placeholder="Enter your password">
+            <span id="pswerr"></span>
+        </div>
+        <div>
+            <input type="password" id="cpsw" placeholder="Enter your Conform password">
+        </div>
+        <div>
+            <input type="submit" >
+        </div>
+    </form>
+
+
+    <script>
+
+        namedata = document.getElementById("nm")
+        nmerr = document.getElementById("nmerr")
+        userdata = document.getElementById("ur")
+        usererr = document.getElementById("urerr")
+        Email = document.getElementById("Em")
+        emerr = document.getElementById("emerr")
+        phone = document.getElementById("ph")
+        pherr = document.getElementById("pherr")
+        password = document.getElementById("psw")
+        pswerr = document.getElementById("pswerr")
+        cpsw = document.getElementById("cpsw")
+
+
+        function validation(){
+            if(namedata.value == "" || namedata.value == null){
+                nmerr.innerHTML = "Pls required name..!";
+                nmerr.style.color = "red"
+                return false;
+            }
+            else{
+                nmerr.innerHTML = "";
+            }
+            if(userdata.value == "" || userdata.value == null){
+                usererr.innerHTML = "Pls required username..!";
+                usererr.style.color = "red"
+                return false;
+            }
+            else{
+                 usererr.innerHTML = "";
+            }
+            if(Email.value == "" || Email.value == null){
+                emerr.innerHTML = "Pls required Email..!";
+                emerr.style.color = "red"
+                return false;
+            }
+            else{
+                emerr.innerHTML = "";
+            }
+            if(phone.value == "" || phone.value == null){
+                pherr.innerHTML = "Pls required phone..!";
+                pherr.style.color = "red"
+                return false;
+            }
+            else{
+                pherr.innerHTML = "";
+            }
+            if(password.value == "" || password.value == null){
+                pswerr.innerHTML = "Pls required password..!";
+                pswerr.style.color = "red"
+                return false;
+            }
+            else{
+                pswerr.innerHTML = "";
+            }
+            if(password.value !== cpsw.value){
+               alert("password does not match..!");
+               return false;
+            }  
+            
+        }
+      
+
+    </script>
+</body>
+</html>
