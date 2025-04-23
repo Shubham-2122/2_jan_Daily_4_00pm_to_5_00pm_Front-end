@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // start index 0 value[index]
+
+        let arr = [1,2,3,4,5,"sd","asd","av","xs"]
+        console.log(arr)
+        // console.log(arr[2])
+
+        // 1) simple for
+        // for(let i=0;i<arr.length;i++){
+        //     console.log(i)
+        //     console.log(arr[i])
+        //     document.write(arr[i],"<br>")
+        // }
+
+        // 2) for of values
+        // for(let data of arr){
+        //     console.log(data)
+        //     document.write(data,"<br>")
+        // }
+
+        // 3) for in same index , values
+        // for(let index in arr){
+        //     console.log(index)
+        //     console.log(arr[index])
+        //     document.writeln("index =>",index," values =>",arr[index],"<br>")
+        // }
+
+        // 4) foreach  spreate index and value
+        arr.forEach((value,index)=>{
+            console.log(value)
+            console.log(index)
+            document.write("index =>",index," values =>",value,"<br>")
+        })
+
+
+        
+
+    </script>
+</body>
+</html>

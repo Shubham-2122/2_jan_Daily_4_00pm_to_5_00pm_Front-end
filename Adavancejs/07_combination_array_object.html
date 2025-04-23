@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1) array inner arry 
+    2) array inner object 
+    3) object inner object
+    4) object inner array   -->
+
+
+    <script>
+
+        let arr = [1, 2, 3, 4, [5, 6, 7, [8, 9, 10]]]
+        console.log(arr)
+        console.log(arr[3])
+        // nested array
+        console.log(arr[4][0])
+        console.log(arr[4][3][2])
+
+
+        // object . property
+        let person = {
+            name: "Aakash",
+            age: 23,
+            course: {
+                front: "Front-end",
+                back: "Back-end"
+            }
+        }
+
+        console.log(person)
+        console.log(person.name)
+        console.log(person.course.back)
+
+
+        // arr inner object
+        let data = [1,2,3,4,5,6,{
+            name : "Shubham",
+            course : "MERN_STACK"
+        }]
+
+        console.log(data)
+
+        console.log(data[5])
+        console.log(data[6].name)
+        console.log(data[6].course)
+
+
+        // object inner arr 
+        let Emplyoee = {
+            id : 1,
+            name : "het",
+            work  : ["Front-end","Back-end","Full-stack"],
+            surname : "Patel"
+        }
+        console.log(Emplyoee)
+        console.log(Emplyoee.name)
+        console.log(Emplyoee.work[1])
+
+
+    </script>
+
+</body>
+
+</html>
