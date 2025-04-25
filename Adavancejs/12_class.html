@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- class :- blue print of object  -->
+    <!-- class :- collection of data member(varibales) and membar function(function) in class. -->
+
+    <!-- syntax :- 
+    class class-name{
+        memebr function
+        function(){
+            data memebr 
+            let var = value
+        }
+        function(){
+            data memebr 
+            let var = value
+        }
+    }
+    
+    let name = new class-name
+    
+    -->
+
+
+    <script>
+        class Bank{
+            // membar fucntion (function)
+            x = function Details(pin,blance){
+
+                // data memebr (varibale)
+                let bankname = "HDFC";
+                let bankIFSC ="HDFC002H";
+                let Atmpin = pin;
+                let bankblance = blance;
+
+                console.log("Bankname",bankname)
+                console.log("BankIFSC",bankIFSC)
+                console.log("Atmpin",Atmpin)
+                console.log("BankBlance",bankblance)
+            }
+
+            y = function deposit(){
+                console.log("deposit function")
+            }
+
+            z = function widrow(){
+                console.log()
+            }
+        }
+
+        // console.log(Bank)
+        let aniket = new Bank;
+        console.log(aniket)
+        aniket.x(123,5000)
+        aniket.y()
+
+        let aakash = new Bank
+        console.log(aakash)
+        aakash.y()
+        aakash.x(345,54000)
+
+    </script>
+
+
+</body>
+</html>
