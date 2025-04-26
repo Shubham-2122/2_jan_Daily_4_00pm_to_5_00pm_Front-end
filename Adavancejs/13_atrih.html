@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class Artih{
+            // member function
+            x = function sum(){
+                // data member
+                let a=20,b=10;
+                console.log("sum =>",a+b)
+                document.writeln("sum =>",a+b,"<br>")
+            }
+            y = function sub(a,b){
+                // without data member
+                console.log("sub =>",a-b)
+                document.writeln("sub =>",a-b,"<br>")
+            }
+            mul(){
+                let a = 30,b=10;
+                console.log("Mul =>",a*b)
+                document.write("Mul =>",a*b,"<br>")   
+            }
+            divi(a,b){
+                console.log("divi =>",a/b)
+                document.write("divi =>",a/b,"<br>")
+            }
+        }
+
+        console.log(Artih)
+
+        let ob = new Artih;
+        console.log(ob)
+        ob.x()
+        ob.y(50,20)
+        ob.mul()
+        ob.divi(30,10)
+        ob.y(30,20)
+
+    </script>
+</body>
+</html>

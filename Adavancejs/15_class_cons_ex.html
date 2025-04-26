@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- this class constru :- value this -->
+    <script>
+
+        class Atrim{
+            constructor(a,b){
+                this.a = a;
+                this.b = b;
+                // console.log(this.a)
+                // console.log(this.b)
+            }
+            x = function sum(){
+                console.log(`sum = > ${this.a + this.b}`)
+                document.write(`sum => ${this.a + this.b} <br>`)
+            }
+            y = function sub(){
+                console.log(`sub = > ${this.a - this.b}`)
+                document.write(`sub => ${this.a - this.b} <br>`)
+            }
+            mul(){
+                console.log(`mul = > ${this.a * this.b}`)
+                document.write(`mul => ${this.a * this.b} <br>`)
+            }
+
+        }
+
+        console.log(Atrim)
+        let ob = new Atrim(40,20)
+        // console.log(ob)
+        ob.x()
+        ob.y()
+        console.log( ob.a)
+        ob.mul()
+    
+
+
+    </script>
+</body>
+</html>
