@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inritance : one class to another class access  -->
+
+    <!-- type of inritance -->
+     <!-- 1) single A - b  
+     2) muti level A - b - c
+     3) multiple level A - b , C -b  not possible javascript 
+     4) hyrichal A - b , A - c
+     5) hybrid any 2 inritance combine -->
+
+
+     <script>
+
+        //single level 
+
+        class A{
+            x = function data(){
+                console.log("A class function")
+            }
+            data1(){
+                console.log("data 1 dasjb")
+            }
+        }
+        class B extends A{
+            y =  function data2(){
+                console.log("B class Function")
+            }
+        }
+
+        let ob = new B 
+        console.log(ob)
+
+        ob.y()
+        ob.x()
+        ob.data1()
+     </script>
+
+</body>
+</html>
