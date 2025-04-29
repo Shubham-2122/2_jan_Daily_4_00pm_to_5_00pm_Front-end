@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- callback :- outer funcion call and inner function call (callback function) -->
+
+    <script>
+
+        // setTimeout(function(){
+        //     console.log("data")
+        // },2000)
+
+        // outer function call 
+        function output(){
+            data()
+        }
+
+        // callback function
+        function data(){
+            let a=20,b=10  
+            console.log("sum =>",a+b)
+        }
+
+        output()
+
+    </script>
+</body>
+</html>

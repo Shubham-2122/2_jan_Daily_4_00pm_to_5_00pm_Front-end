@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- hide private -->
+     <!-- private how access  -->
+
+     <script>
+
+        function Person(name,age){
+
+            // this varibale private _
+            let _name = name;
+            let _age = age; 
+
+
+            // how to access
+            this.getname = function(){
+                return _name;
+            }
+
+            this.getage = function(){
+                return _age;
+            }
+
+            this.setage = function(newage){
+                return _age = newage;
+                // if(newage){
+                //     return _age = newage
+                // }
+                // else{
+                //     return _age
+                // }
+            }
+        }
+
+        let data = new Person("ansh",23)
+        console.log(data)
+
+        // private not access
+        console.log(data._name)
+        console.log(data._age)
+
+        console.log(data.getname())
+
+        console.log(data.getage())
+        console.log(data.setage(25))
+        console.log(data.getage())
+     </script>
+</body>
+</html>

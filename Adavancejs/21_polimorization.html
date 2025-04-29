@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- method overloading(compile) :- same class inner same function name and deffent is deffent parameter.  -->
+    <!-- method overrriding(runtime) :- function name will same but deffent class overrriding .  -->
+
+    <script>
+        // method overloading  
+
+        // class ab{
+        //     data(a){
+        //         console.log("a =>",a);
+        //     }
+        //     data(a,b){
+        //         console.log("sum =>",a+b);
+        //     }
+        // }
+        // let abc = new ab 
+        // console.log(abc)
+        // abc.data(10,20)
+
+
+        // method overring 
+        class A{
+            data(){
+                console.log("A class data")
+            }
+        }
+        class B extends A {
+            data(){
+                console.log("B class data")
+            }
+        }
+        class C extends B{
+            data(){
+                console.log("c class data")
+            }
+        }
+        // let abc = new C;
+        // console.log(abc)
+        // abc.data()
+        // abc.data()
+
+        // array convert 
+        let day = [new A,new B,new C]
+        console.log(day)
+        day.forEach((data)=>{
+            data.data()
+        })
+
+    </script>
+</body>
+</html>
