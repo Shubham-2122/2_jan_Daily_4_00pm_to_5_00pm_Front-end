@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- promise :- as well object -->
+
+    <!-- 3 case -->
+    <!-- 1) pending :- api hold 
+     2) fullfiled :- Completed clear api compe 
+     3) reject :- reject data api data  -->
+
+
+    <!-- let pr = new Promise(function(res,reject){
+        ....coding
+     }) -->
+
+    <script>
+
+        let pr = new Promise(function (res, error) {
+            let a = 10
+            if (a == 11) {
+                // console.log("completed data")
+                res("completed data")
+            }
+            else {
+                // console.log("not completed data")
+                error("not Completed data")
+            }
+        })
+
+        console.log(pr)
+
+    </script>
+</body>
+
+</html>

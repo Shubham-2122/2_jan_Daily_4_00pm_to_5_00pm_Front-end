@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- call:- method function outer fucntion call -->
+     <!-- call :- as spreate agument -->
+
+    <script>
+
+        let obj = {
+            fullname : function (city,state){
+                return this.name + " " +this.surname + " " + city + " " + state
+            }
+        }
+
+
+        let person ={
+            name : "Ansh",
+            surname : "patel"
+        }
+
+        let person1 = {
+            name : "harsh",
+            surname : "patel"
+        }
+
+        // call as spreate argument
+        console.log(obj.fullname.call(person,"ahmedabad","gujarat"))
+
+        // apply method as array
+        console.log(obj.fullname.apply(person1,["surat","gujarat"]))
+    </script>
+</body>
+</html>
