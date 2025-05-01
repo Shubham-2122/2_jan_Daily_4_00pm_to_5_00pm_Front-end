@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- fetch :- javascript inbuilt method api data text call -->
+    <!-- fetch :- javascript one type promise -->
+
+    <!-- syntax 
+    fetch("location",{method : ""})
+    .then(convert object ya array)
+    .then(output) -->
+
+    <!-- get (default) :- read -->
+     <!-- post :- create -->
+      <!-- delete :- remove -->
+       <!-- put/patch :- update  -->
+
+
+        <h1 id="h1"></h1>
+<script>
+
+        // console.log(fetch())
+
+        fetch("data.txt",{
+            method:"GET"
+        })
+        .then((res)=>{
+            // console.log(res)
+            //text file convert  string 
+            return res.text();
+        })
+        .then((data)=>{
+            console.log(data)
+            document.getElementById("h1").innerHTML = data
+        })
+
+    </script>
+
+</body>
+</html>
