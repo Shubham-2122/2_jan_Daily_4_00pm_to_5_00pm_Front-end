@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // syncro
+        // console.log(1)
+        // console.log(2)
+        // console.log(3)
+        // console.log(4)
+        // console.log(5)
+
+    // asyncro
+        // console.log(6)
+        // console.log(7)
+        // console.log(8)
+        // setTimeout(()=>{
+        //     console.log(9)
+        // },2000)
+        // console.log(10)
+        // console.log(10)
+
+        // asyc :- api data hold await key weord 
+
+        // async funtion  api data time hold await 
+        // function console  hold not allow
+
+
+
+
+
+        function sum(a,b){
+            return a+b
+        }
+        // sum(20,10)
+
+        async function demo() {
+            console.log(1)
+            console.log(2)
+            // hold data
+            let result = await sum(40,20)
+            setTimeout(()=>{
+                console.log("sum =>",result)
+            },2000)
+            console.log(3)
+            console.log(4)
+        }
+        demo()
+
+
+
+
+
+
+    </script>
+</body>
+</html>
