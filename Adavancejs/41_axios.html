@@ -35,11 +35,52 @@
             console.log(res.data)
             for(let data of res.data){
                 console.log(data)
+                document.write(`<h4>id :- ${data.id} name :- ${data.name}</h4>`)
             }
         }
 
-        viewdata()
-    </script>
+        // viewdata()
+        // Read op 
+
+
+        let person = {
+            name : "harsh",
+            Coruse : "Front-end",
+            state : "gujarat",
+            mobile : "34534535345"
+        }
+
+        const createdata=async()=>{
+            const res = await axios.post("https://660d95e36ddfa2943b34c530.mockapi.io/data",person)
+            console.log(res.data)
+        }
+        // createdata()
+
+        const deletedata=async()=>{
+            const res = await axios.delete(`https://660d95e36ddfa2943b34c530.mockapi.io/data/44`)
+            console.log(res.data)
+        }
+        // deletedata()
+
+        // update data find 
+
+        let person1 = {
+            id : 43,
+            name : "Aakash",
+            Coruse : "back-end",
+            city:"surat",
+            state:"Gujarat"
+        }
+
+        const updatedata=async()=>{
+            const res = await axios.put(`https://660d95e36ddfa2943b34c530.mockapi.io/data/${person1.id}`,person1)
+            console.log(res.data)
+        }
+        updatedata()
+        
+
+
+</script>
 </body>
 
 </html>
