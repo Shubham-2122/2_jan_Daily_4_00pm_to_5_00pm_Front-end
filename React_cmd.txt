@@ -1,0 +1,40 @@
+Javascript framwork (logic,data,reuse)
+
+React , aegulare , vue
+single page , - , -
+vitrual dom, real dom , real dom,
+routing , not ,not 
+Class and fuction , class , class 
+Compoent inbuilt , compenent define
+
+state Web app server clinet local host sytem 
+
+React install web app 
+Node:- javascript libery
+
+chrome v8 , mic :- v7
+
+node install on google 
+cmd :-  node -v
+npm -v 
+npm :- node package manager
+
+npm vs npx(node package extensi/xml) 
+
+React web app 
+cmd :- npx create-react-app app-name
+cd app-name
+npm start
+node module :- npm install
+
+
+vite-react :- vite install
+cmd :- npm create vite@latest my-react-app
+cd my-react-app 
+npm install 
+cmd:- npm run dev
+
+
+
+
+
