@@ -27,12 +27,20 @@ cd app-name
 npm start
 node module :- npm install
 
+--> node module :- libery
+--> public :- index.html / imges
+--> src :- index.js , app.js 
+index.html (demo) - > index.js -> app.js
+package-lock.json
+package.json
 
 vite-react :- vite install
 cmd :- npm create vite@latest my-react-app
 cd my-react-app 
 npm install 
 cmd:- npm run dev
+
+
 
 
 
