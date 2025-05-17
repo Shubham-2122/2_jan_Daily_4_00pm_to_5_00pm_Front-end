@@ -1,0 +1,21 @@
+HTML :- 
+	Block vs inline tag 
+	void tag 
+	Tag and element 
+	attri
+	table
+	from 
+	
+HTML 5  vs html ?
+
+CSS :- 
+	type 
+	selector
+	background
+	box model
+	psudeo class: and elemet:: 
+	position 
+	anition
+	layout :- flex and grid 
+	css and css3
+	media 

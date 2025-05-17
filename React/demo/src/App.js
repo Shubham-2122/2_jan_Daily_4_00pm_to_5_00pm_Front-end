@@ -4,6 +4,7 @@ import React from "react";
 // import Hello from "./Jsx/Hello";
 // import Hello2 from "./Jsx/Hello2";
 import Css from "./CSS/Css";
+import Mainprops from "./Props/Mainprops";
 
 function App() {
     return (
@@ -21,7 +22,10 @@ function App() {
 
 
             {/* CSS Compoennt */}
-            <Css />
+            {/* <Css /> */}
+
+            {/* props data */}
+            <Mainprops />
         </div>
     )
 }
