@@ -3,8 +3,9 @@ import React from "react";
 // import Funcompo from "./Compent/Funcompo";
 // import Hello from "./Jsx/Hello";
 // import Hello2 from "./Jsx/Hello2";
-import Css from "./CSS/Css";
-import Mainprops from "./Props/Mainprops";
+// import Css from "./CSS/Css";
+// import Mainprops from "./Props/Mainprops";
+import Mainstate from "./State/Mainstate";
 
 function App() {
     return (
@@ -25,7 +26,11 @@ function App() {
             {/* <Css /> */}
 
             {/* props data */}
-            <Mainprops />
+            {/* <Mainprops /> */}
+
+
+            {/* State */}
+            <Mainstate />
         </div>
     )
 }
