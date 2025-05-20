@@ -31,8 +31,6 @@ class ClassState extends Component {
         })
     }
 
-
-
     render() {
 
         // console.log(this.state)
