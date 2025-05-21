@@ -5,7 +5,9 @@ import React from "react";
 // import Hello2 from "./Jsx/Hello2";
 // import Css from "./CSS/Css";
 // import Mainprops from "./Props/Mainprops";
-import Mainstate from "./State/Mainstate";
+// import Mainstate from "./State/Mainstate";
+import Form from "./Form/Form";
+import Formobject from "./Form/Formobject";
 
 function App() {
     return (
@@ -30,7 +32,12 @@ function App() {
 
 
             {/* State */}
-            <Mainstate />
+            {/* <Mainstate /> */}
+
+
+            {/* form halding */}
+            {/* <Form /> */}
+            <Formobject />
         </div>
     )
 }
