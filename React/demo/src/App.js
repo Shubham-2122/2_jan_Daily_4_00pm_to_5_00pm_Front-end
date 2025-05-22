@@ -6,8 +6,11 @@ import React from "react";
 // import Css from "./CSS/Css";
 // import Mainprops from "./Props/Mainprops";
 // import Mainstate from "./State/Mainstate";
-import Form from "./Form/Form";
-import Formobject from "./Form/Formobject";
+// import Form from "./Form/Form";
+// import Formobject from "./Form/Formobject";
+// import Usedata from "./UssEffect/Usedata";
+import Usetable from "./UssEffect/Usetable";
+import Useaxios from "./UssEffect/Useaxios";
 
 function App() {
     return (
@@ -29,6 +32,7 @@ function App() {
 
             {/* props data */}
             {/* <Mainprops /> */}
+            
 
 
             {/* State */}
@@ -37,7 +41,13 @@ function App() {
 
             {/* form halding */}
             {/* <Form /> */}
-            <Formobject />
+            {/* <Formobject /> */}
+
+
+            {/* useEffect */}
+            {/* <Usedata /> */}
+            {/* <Usetable /> */}
+            <Useaxios />
         </div>
     )
 }
