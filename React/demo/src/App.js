@@ -9,8 +9,9 @@ import React from "react";
 // import Form from "./Form/Form";
 // import Formobject from "./Form/Formobject";
 // import Usedata from "./UssEffect/Usedata";
-import Usetable from "./UssEffect/Usetable";
-import Useaxios from "./UssEffect/Useaxios";
+// import Usetable from "./UssEffect/Usetable";
+// import Useaxios from "./UssEffect/Useaxios";
+import Carddata from "./UssEffect/Carddata";
 
 function App() {
     return (
@@ -47,7 +48,8 @@ function App() {
             {/* useEffect */}
             {/* <Usedata /> */}
             {/* <Usetable /> */}
-            <Useaxios />
+            {/* <Useaxios /> */}
+            <Carddata />
         </div>
     )
 }
