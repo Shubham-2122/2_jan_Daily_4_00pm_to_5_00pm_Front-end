@@ -11,7 +11,10 @@ import React from "react";
 // import Usedata from "./UssEffect/Usedata";
 // import Usetable from "./UssEffect/Usetable";
 // import Useaxios from "./UssEffect/Useaxios";
-import Carddata from "./UssEffect/Carddata";
+// import Carddata from "./UssEffect/Carddata";
+// import UseCard from "./UssEffect/UseCard";
+// import Reactboot from "./Bootsrtap/Reactboot";
+import Footerdata from "./Bootsrtap/Footerdata";
 
 function App() {
     return (
@@ -22,7 +25,7 @@ function App() {
             {/* Compoennt */}
             {/* <Classcompo /> */}
             {/* <Funcompo /> */}
-        
+
             {/* jsx compo */}
             {/* <Hello /> */}
             {/* <Hello2 /> */}
@@ -33,7 +36,7 @@ function App() {
 
             {/* props data */}
             {/* <Mainprops /> */}
-            
+
 
 
             {/* State */}
@@ -49,7 +52,12 @@ function App() {
             {/* <Usedata /> */}
             {/* <Usetable /> */}
             {/* <Useaxios /> */}
-            <Carddata />
+            {/* <Carddata /> */}
+            {/* <UseCard /> */}
+
+            {/* Bootstrap */}
+            {/* <Reactboot /> */}
+            <Footerdata />
         </div>
     )
 }
