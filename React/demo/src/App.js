@@ -15,6 +15,7 @@ import React from "react";
 // import UseCard from "./UssEffect/UseCard";
 // import Reactboot from "./Bootsrtap/Reactboot";
 import Footerdata from "./Bootsrtap/Footerdata";
+import Maincontext from "./Context/Maincontext";
 
 function App() {
     return (
@@ -57,7 +58,9 @@ function App() {
 
             {/* Bootstrap */}
             {/* <Reactboot /> */}
-            <Footerdata />
+            {/* <Footerdata /> */}
+
+            <Maincontext />
         </div>
     )
 }
