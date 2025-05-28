@@ -16,52 +16,66 @@ import React from "react";
 // import Reactboot from "./Bootsrtap/Reactboot";
 import Footerdata from "./Bootsrtap/Footerdata";
 import Maincontext from "./Context/Maincontext";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Layout/Pages/Home";
+import About from "./Layout/Pages/About";
+import Contact from "./Layout/Pages/Contact";
+import Help from "./Layout/Pages/Help";
 
 function App() {
     return (
-        <div>
-            <h1>hello this App data</h1>
-            {/* <h1>hello this h1</h1> */}
+        <BrowserRouter>
+            <div>
+                {/* <h1>hello this App data</h1> */}
+                {/* <h1>hello this h1</h1> */}
 
-            {/* Compoennt */}
-            {/* <Classcompo /> */}
-            {/* <Funcompo /> */}
+                {/* Compoennt */}
+                {/* <Classcompo /> */}
+                {/* <Funcompo /> */}
 
-            {/* jsx compo */}
-            {/* <Hello /> */}
-            {/* <Hello2 /> */}
-
-
-            {/* CSS Compoennt */}
-            {/* <Css /> */}
-
-            {/* props data */}
-            {/* <Mainprops /> */}
+                {/* jsx compo */}
+                {/* <Hello /> */}
+                {/* <Hello2 /> */}
 
 
+                {/* CSS Compoennt */}
+                {/* <Css /> */}
 
-            {/* State */}
-            {/* <Mainstate /> */}
-
-
-            {/* form halding */}
-            {/* <Form /> */}
-            {/* <Formobject /> */}
+                {/* props data */}
+                {/* <Mainprops /> */}
 
 
-            {/* useEffect */}
-            {/* <Usedata /> */}
-            {/* <Usetable /> */}
-            {/* <Useaxios /> */}
-            {/* <Carddata /> */}
-            {/* <UseCard /> */}
 
-            {/* Bootstrap */}
-            {/* <Reactboot /> */}
-            {/* <Footerdata /> */}
+                {/* State */}
+                {/* <Mainstate /> */}
 
-            <Maincontext />
-        </div>
+
+                {/* form halding */}
+                {/* <Form /> */}
+                {/* <Formobject /> */}
+
+
+                {/* useEffect */}
+                {/* <Usedata /> */}
+                {/* <Usetable /> */}
+                {/* <Useaxios /> */}
+                {/* <Carddata /> */}
+                {/* <UseCard /> */}
+
+                {/* Bootstrap */}
+                {/* <Reactboot /> */}
+                {/* <Footerdata /> */}
+                {/* <Maincontext /> */}
+            </div>
+
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/help" element={<Help />} />
+            </Routes>
+
+        </BrowserRouter>
     )
 }
 
