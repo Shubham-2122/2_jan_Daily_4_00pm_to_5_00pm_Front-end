@@ -21,6 +21,9 @@ import Home from "./Layout/Pages/Home";
 import About from "./Layout/Pages/About";
 import Contact from "./Layout/Pages/Contact";
 import Help from "./Layout/Pages/Help";
+import About1 from "./Layout/Pages/About1";
+import About2 from "./Layout/Pages/About2";
+import Notfound from "./Layout/Pages/Notfound";
 
 function App() {
     return (
@@ -69,10 +72,18 @@ function App() {
             </div>
 
             <Routes>
+
+                {/* website */}
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/about" element={<About />} >
+                    <Route path="about1" element={<About1 />} />
+                    <Route path="about2" element={<About2 />} />
+                </Route>
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/help" element={<Help />} />
+
+                {/* not found */}
+                <Route path="*" element={<Notfound />} />
             </Routes>
 
         </BrowserRouter>
