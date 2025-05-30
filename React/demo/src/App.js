@@ -24,6 +24,7 @@ import Help from "./Layout/Pages/Help";
 import About1 from "./Layout/Pages/About1";
 import About2 from "./Layout/Pages/About2";
 import Notfound from "./Layout/Pages/Notfound";
+import Classlife from "./Lifecycle/Classlife";
 
 function App() {
     return (
@@ -81,6 +82,7 @@ function App() {
                 </Route>
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/help" element={<Help />} />
+                  <Route path="/life" element={<Classlife />} />
 
                 {/* not found */}
                 <Route path="*" element={<Notfound />} />
