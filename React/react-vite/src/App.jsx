@@ -1,11 +1,12 @@
 import React from "react"
+import Fonts from "./Font/Fonts"
 
 function App() {
 
 
   return (
     <div>
-      <h1>hello this app data</h1>
+      <Fonts />
     </div>
   )
 }
