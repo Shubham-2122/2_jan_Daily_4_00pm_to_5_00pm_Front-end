@@ -1,1 +1,36 @@
 @import "tailwindcss";
+
+/* only tag name */
+@layer base{
+    h1{
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    /* h2{
+
+    }
+    p{
+
+    } */
+}
+
+/* compoent .class and id */
+@layer components{
+    .card{
+        height: 300px;
+        width: 200px;
+        border: 2px solid;
+    }
+    .card:hover{
+        background-color: red;
+    }
+}
+
+/* margin and paadding */
+@layer utilities{
+    .padd{
+        padding: 50px;
+        /* margin: 50px; */
+    }
+}
