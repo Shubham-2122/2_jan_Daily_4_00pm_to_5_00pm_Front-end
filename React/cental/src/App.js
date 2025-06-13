@@ -6,6 +6,10 @@ import Service from "./Website/Pages/Service";
 import Blog from "./Website/Pages/Blog";
 import Feature from "./Website/Pages/Feature";
 import NotFound from "./Website/Pages/NotFound";
+import Car from "./Website/Pages/Car";
+import Team from "./Website/Pages/Team";
+import Testimonial from "./Website/Pages/Testimonial";
+import Contact from "./Website/Pages/Contact";
 
 function App() {
   return (
@@ -17,8 +21,12 @@ function App() {
           <Route path="/service" element={<Service />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/feature" element={<Feature />} />
+          <Route path="/car" element={<Car />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/Test" element={<Testimonial />} />
+          <Route path="/contact" element={<Contact />} />
 
-          <Route path="*"  element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </BrowserRouter>
