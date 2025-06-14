@@ -10,6 +10,8 @@ import Car from "./Website/Pages/Car";
 import Team from "./Website/Pages/Team";
 import Testimonial from "./Website/Pages/Testimonial";
 import Contact from "./Website/Pages/Contact";
+import Dashboard from "./Admin/Apages/Dashboard";
+import Blogmange from "./Admin/Apages/Blogmange";
 
 function App() {
   return (
@@ -27,6 +29,11 @@ function App() {
           <Route path="/contact" element={<Contact />} />
 
           <Route path="*" element={<NotFound />} />
+
+          {/* admin */}
+          <Route path="/dash" element={<Dashboard />} />
+            <Route path="/blogmanage" element={<Blogmange />} />
+
         </Routes>
       </div>
     </BrowserRouter>
