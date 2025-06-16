@@ -12,6 +12,7 @@ import Testimonial from "./Website/Pages/Testimonial";
 import Contact from "./Website/Pages/Contact";
 import Dashboard from "./Admin/Apages/Dashboard";
 import Blogmange from "./Admin/Apages/Blogmange";
+import BlogAdd from "./Admin/Apages/BlogAdd";
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
 
           {/* admin */}
           <Route path="/dash" element={<Dashboard />} />
-            <Route path="/blogmanage" element={<Blogmange />} />
+          <Route path="/blogmanage" element={<Blogmange />} />
+          <Route path="/blogadd" element={<BlogAdd />} />
 
         </Routes>
       </div>

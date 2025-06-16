@@ -22,9 +22,9 @@ function Blogmange() {
         <div>
             <AHeader />
             <Navdata title="Blog Manage" name="Blogs" />
-            <div className="container">
+            <div className="container py-4">
                 <h1 className='text-center'>Hello This Blog manage</h1>
-                <table className="table">
+                <table className="table table-hover table-dark">
                     <thead>
                         <tr className='text-center'>
                             <th scope="col">#Id</th>

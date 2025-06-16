@@ -1,56 +1,76 @@
 {
-    "blog":[
-        {
-            "id":1,
-            "title":"Rental Cars how to check driving fines?",
-            "desc":"Hello this cards data ",
-            "comment":"4",
-            "name":"martin",
-            "date":"20-12-2023",
-            "img":"https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-         {
-            "id":2,
-            "title":"Document required for car rental",
-            "desc":"Hello this cards data ",
-            "comment":"7",
-            "name":"Helpin",
-            "date":"27-12-2023",
-            "img":"https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&w=600"
-        }
-    ],
-    "user":[
-        {
-            "id":1,
-            "name":"user1",
-            "email":"user1@gmail.com",
-            "password":"1234",
-            "status":"unblock"
-        },
-          {
-            "id":2,
-            "name":"user2",
-            "email":"user2@gmail.com",
-            "password":"123456",
-            "status":"unblock"
-        },
-          {
-            "id":3,
-            "name":"user3",
-            "email":"user3@gmail.com",
-            "password":"1234",
-            "status":"block"
-        }
-    ],
-    "admin":[
-        {
-            "id":1,
-            "name":"admin",
-            "email":"admin@gmail.com",
-            "password":"123456"
-        }
-    ],
-    "car":[
-        {}
-    ]
+  "blog": [
+    {
+      "id": "1",
+      "title": "Rental Cars how to check driving fines?",
+      "desc": "Hello this cards data ",
+      "comment": "4",
+      "name": "martin",
+      "date": "20-12-2023",
+      "img": "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": "2",
+      "title": "Document required for car rental",
+      "desc": "Hello this cards data ",
+      "comment": "7",
+      "name": "Helpin",
+      "date": "27-12-2023",
+      "img": "https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": "1750072449947",
+      "title": "Rent card on travels",
+      "desc": "Hello this Car for Rent in india fast",
+      "comment": "10",
+      "name": "shubham jadav",
+      "date": "2025-06-28",
+      "img": "https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": "1750072704028",
+      "title": "REantal bikes",
+      "desc": "Helkoasd asndbasudh asd nan jk",
+      "comment": "15",
+      "name": "Harsh",
+      "date": "2025-06-26",
+      "img": "https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=600"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "user1",
+      "email": "user1@gmail.com",
+      "password": "1234",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "user2",
+      "email": "user2@gmail.com",
+      "password": "123456",
+      "status": "unblock"
+    },
+    {
+      "id": "3",
+      "name": "user3",
+      "email": "user3@gmail.com",
+      "password": "1234",
+      "status": "block"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "car": [
+    {
+      "id": "e4ea"
+    }
+  ]
 }

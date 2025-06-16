@@ -2,9 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 function AHeader() {
-  return (
-    <div>
+    return (
         <div>
+            <div>
                 {/* Topbar Start */}
                 <div className="container-fluid topbar bg-secondary d-none d-xl-block w-100">
                     <div className="container">
@@ -44,7 +44,13 @@ function AHeader() {
                                     <NavLink to="/dash" className="nav-item nav-link ">Daashboard</NavLink>
                                     <NavLink to="/about" className="nav-item nav-link">About</NavLink>
                                     <NavLink to="/service" className="nav-item nav-link">Service</NavLink>
-                                    <NavLink to="/blogmanage" className="nav-item nav-link">Blog</NavLink>
+                                    <div className="nav-item dropdown">
+                                        <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blogs</a>
+                                        <div className="dropdown-menu m-0">
+                                            <NavLink to="/blogmanage" className="dropdown-item">Blog Manage</NavLink>
+                                            <NavLink to="/blogadd" className="dropdown-item">Blogs Add</NavLink>
+                                        </div>
+                                    </div>
                                     <div className="nav-item dropdown">
                                         <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                         <div className="dropdown-menu m-0">
@@ -63,8 +69,8 @@ function AHeader() {
                 </div>
                 {/* Navbar & Hero End */}
             </div>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default AHeader
