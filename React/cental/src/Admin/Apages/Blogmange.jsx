@@ -34,13 +34,56 @@ function Blogmange() {
         setblogdata(res.data)
     }
 
-    const removepro=async(id)=>{
+    const removepro = async (id) => {
         const res = await axios.delete(`http://localhost:3000/blog/${id}`)
         console.log(res.data)
         fetchdata()
     }
 
+    // UPDATE DATA  model
+    const [blogupdate, setblogupdate] = useState(null)
+    const [updateblogs, setupdateblogs] = useState({
+        id: "",
+        title: "",
+        desc: "",
+        comment: "",
+        name: "",
+        date: "",
+        img: ""
+    })
 
+
+    const openmodel = (id) => {
+        setblogupdate(id)
+        setupdateblogs(id)
+    }
+
+    const datachnage = (e) => {
+        setupdateblogs({
+            ...updateblogs,
+            [e.target.name]: e.target.value
+        })
+        console.log(updateblogs)
+    }
+
+    const updatedataa = async (e) => {
+        e.preventDefault()
+
+        const res = await axios.put(`http://localhost:3000/blog/${updateblogs.id}`, updateblogs)
+        console.log(res.data)
+        fetchdata()
+        
+        setupdateblogs({
+            id: "",
+            title: "",
+            desc: "",
+            comment: "",
+            name: "",
+            date: "",
+            img: ""
+        })
+        setblogupdate(null)
+    }
 
 
     return (
@@ -73,8 +116,8 @@ function Blogmange() {
                                         <td>{data.comment}</td>
                                         <td>
                                             <button className='btn btn-info' data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => getdata(data.id)}>View</button>
-                                            <button className='btn btn-success mx-2'>Edit</button>
-                                            <button className='btn btn-danger' onClick={()=>removepro(data.id)}>Delete</button>
+                                            <button className='btn btn-success mx-2' onClick={() => openmodel(data)}>Edit</button>
+                                            <button className='btn btn-danger' onClick={() => removepro(data.id)}>Delete</button>
                                         </td>
                                     </tr>
                                 )
@@ -91,23 +134,23 @@ function Blogmange() {
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                 <div className="col-lg-12" data-wow-delay="0.1s">
-                                            <div className="blog-item">
-                                                <div className="blog-img">
-                                                    <img src={blogdata.img} className="img-fluid rounded-top w-100" style={{height:"200px"}} alt="Image" />
-                                                </div>
-                                                <div className="blog-content rounded-bottom p-4">
-                                                    <div className="blog-date">{blogdata.date}</div>
-                                                    <div className="blog-comment my-3">
-                                                        <div className="small"><span className="fa fa-user text-primary" /><span className="ms-2">{blogdata.name}</span></div>
-                                                        <div className="small"><span className="fa fa-comment-alt text-primary" /><span className="ms-2">{blogdata.comment} Comments</span></div>
-                                                    </div>
-                                                    <a href="#" className="h4 d-block mb-3">{blogdata.title}</a>
-                                                    <p className="mb-3">{blogdata.desc}</p>
-                                                    <a href="#" className>Read More  <i className="fa fa-arrow-right" /></a>
-                                                </div>
-                                            </div>
+                                <div className="col-lg-12" data-wow-delay="0.1s">
+                                    <div className="blog-item">
+                                        <div className="blog-img">
+                                            <img src={blogdata.img} className="img-fluid rounded-top w-100" style={{ height: "200px" }} alt="Image" />
                                         </div>
+                                        <div className="blog-content rounded-bottom p-4">
+                                            <div className="blog-date">{blogdata.date}</div>
+                                            <div className="blog-comment my-3">
+                                                <div className="small"><span className="fa fa-user text-primary" /><span className="ms-2">{blogdata.name}</span></div>
+                                                <div className="small"><span className="fa fa-comment-alt text-primary" /><span className="ms-2">{blogdata.comment} Comments</span></div>
+                                            </div>
+                                            <a href="#" className="h4 d-block mb-3">{blogdata.title}</a>
+                                            <p className="mb-3">{blogdata.desc}</p>
+                                            <a href="#" className>Read More  <i className="fa fa-arrow-right" /></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -115,6 +158,63 @@ function Blogmange() {
                         </div>
                     </div>
                 </div>
+                {
+                    blogupdate && (
+                        <div className="bg-secondary p-5 rounded">
+                            <h4 className="text-primary mb-4">Blogs Update Data</h4>
+                            <form >
+                                <div className="row g-4">
+                                    <div className="col-lg-12 col-xl-6">
+                                        <div className="form-floating">
+                                            <input type="text" value={updateblogs && updateblogs.title} name='title' onChange={datachnage} className="form-control" id="name" placeholder="Your title" />
+                                            <label htmlFor="name">Your title</label>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-12 col-xl-6">
+                                        <div className="form-floating">
+                                            <input type="text" value={updateblogs && updateblogs.name} name='name' onChange={datachnage} className="form-control" id="name" placeholder="Your Name" />
+                                            <label htmlFor="name">Your name</label>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-12 col-xl-6">
+                                        <div className="form-floating">
+                                            <input type="text" value={updateblogs && updateblogs.comment} name='comment' onChange={datachnage} className="form-control" id="comment" placeholder="Your comment" />
+                                            <label htmlFor="comment">Your comment</label>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-12 col-xl-6">
+                                        <div className="form-floating">
+                                            <input type="date" value={updateblogs && updateblogs.date} name='date' onChange={datachnage} className="form-control" />
+                                        </div>
+                                    </div>
+                                    <div className="col-12">
+                                        <div className="form-floating">
+                                            <input type="url" value={updateblogs && updateblogs.img} name='img' onChange={datachnage} className="form-control" id="image" placeholder="your Images url" />
+                                            <label htmlFor="image">your Images url</label>
+                                        </div>
+                                    </div>
+                                    <div className="col-12">
+                                        <div className="form-floating">
+                                            <textarea className="form-control" value={updateblogs && updateblogs.desc} name='desc' onChange={datachnage} placeholder="Leave a message here Desc" id="message" style={{ height: 160 }} defaultValue={""} />
+                                            <label htmlFor="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div className="col-12">
+                                        <div className="row">
+                                            <div className="col-md-6">
+                                                <button className="btn btn-light w-100 py-3" onClick={updatedataa}>update blogs</button>
+                                            </div>
+                                            <div className="col-md-6">
+                                                <button className="btn btn-light w-100 py-3" onClick={() => setblogupdate(null)}>cancle blogs</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    )
+                }
             </div>
         </div>
     )
