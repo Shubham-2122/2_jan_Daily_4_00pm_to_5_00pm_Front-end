@@ -13,11 +13,14 @@ import Contact from "./Website/Pages/Contact";
 import Dashboard from "./Admin/Apages/Dashboard";
 import Blogmange from "./Admin/Apages/Blogmange";
 import BlogAdd from "./Admin/Apages/BlogAdd";
+import Alogin from "./Admin/Apages/Alogin";
+ import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <ToastContainer />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -35,6 +38,7 @@ function App() {
           <Route path="/dash" element={<Dashboard />} />
           <Route path="/blogmanage" element={<Blogmange />} />
           <Route path="/blogadd" element={<BlogAdd />} />
+             <Route path="/alogin" element={<Alogin />} />
 
         </Routes>
       </div>
