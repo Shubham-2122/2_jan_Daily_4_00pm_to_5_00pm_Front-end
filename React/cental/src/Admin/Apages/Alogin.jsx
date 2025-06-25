@@ -41,9 +41,6 @@ function Alogin() {
     const getsubmit = async (e) => {
         e.preventDefault();
 
-
-
-
         try {
             const { email, password } = form
 

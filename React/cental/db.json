@@ -49,6 +49,13 @@
       "email": "user3@gmail.com",
       "password": "1234",
       "status": "block"
+    },
+    {
+      "id": "1750764031070",
+      "name": "harsh",
+      "email": "harsh@gmail.com",
+      "password": "123456",
+      "status": "unblock"
     }
   ],
   "admin": [
