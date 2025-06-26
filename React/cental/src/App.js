@@ -17,6 +17,7 @@ import Alogin from "./Admin/Apages/Alogin";
  import { ToastContainer } from 'react-toastify';
 import Login from "./Website/Pages/Login";
 import Register from "./Website/Pages/Register";
+import Editprofile from "./Website/Pages/Editprofile";
 
 function App() {
   return (
@@ -34,15 +35,16 @@ function App() {
           <Route path="/Test" element={<Testimonial />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
-           <Route path="/register" element={<Register />} />
-
+          <Route path="/register" element={<Register />} />
+          <Route path="/edit" element={<Editprofile />} />
+          
           <Route path="*" element={<NotFound />} />
 
           {/* admin */}
           <Route path="/dash" element={<Dashboard />} />
           <Route path="/blogmanage" element={<Blogmange />} />
           <Route path="/blogadd" element={<BlogAdd />} />
-             <Route path="/alogin" element={<Alogin />} />
+          <Route path="/alogin" element={<Alogin />} />
 
         </Routes>
       </div>
