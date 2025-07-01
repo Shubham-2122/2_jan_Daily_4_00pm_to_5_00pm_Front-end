@@ -25,6 +25,8 @@ import About1 from "./Layout/Pages/About1";
 import About2 from "./Layout/Pages/About2";
 import Notfound from "./Layout/Pages/Notfound";
 import Classlife from "./Lifecycle/Classlife";
+import Usedata from "./Hooks/Usedata";
+import UseRefd from "./Hooks/UseRefd";
 
 function App() {
     return (
@@ -82,8 +84,9 @@ function App() {
                 </Route>
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/help" element={<Help />} />
-                  <Route path="/life" element={<Classlife />} />
-
+                <Route path="/life" element={<Classlife />} />
+                <Route path="/usereducer" element={<Usedata />} />
+                <Route path="/useRef" element={<UseRefd />} />
                 {/* not found */}
                 <Route path="*" element={<Notfound />} />
             </Routes>

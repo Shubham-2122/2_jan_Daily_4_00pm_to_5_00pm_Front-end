@@ -28,6 +28,12 @@ function Header() {
                                  <li className="nav-item">
                                     <NavLink className="nav-link" to="/life">Lifecycle</NavLink>
                                 </li>
+                                  <li className="nav-item">
+                                    <NavLink className="nav-link" to="/usereducer">useReducer</NavLink>
+                                </li>
+                                 <li className="nav-item">
+                                    <NavLink className="nav-link" to="/useRef">Usered</NavLink>
+                                </li>
                                 {/* <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Dropdown
