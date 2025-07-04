@@ -1,10 +1,22 @@
 import React from 'react'
+import Read from './Component/Read'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Create from './Component/Create'
+import Navbar from './Component/Navbar'
 
 function App() {
   return (
+    <BrowserRouter>
     <div>
-      <h1>hello this Crud in Redux</h1>
+
+      <Navbar />
+            <h1 className='bg-success '>hello this Crud in Redux</h1>
+      <Routes>
+        <Route path='/' element={<Read />} />
+        <Route path='/new' element={<Create />} />
+      </Routes>
     </div>
+    </BrowserRouter>
   )
 }
 
