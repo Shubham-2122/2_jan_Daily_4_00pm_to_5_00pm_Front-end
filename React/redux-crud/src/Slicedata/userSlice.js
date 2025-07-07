@@ -3,9 +3,9 @@ import axios from "axios";
 
 
 export const showuser = createAsyncThunk(
-    'showuser',async(argu,{rejectWithValue})=>{
+    'showuser', async (argu, { rejectWithValue }) => {
         try {
-            
+
             const res = await axios.get("http://localhost:3000/user")
             const result = await res.data
             return result
@@ -16,44 +16,101 @@ export const showuser = createAsyncThunk(
     }
 )
 
+// new data
+export const creatuser = createAsyncThunk(
+    'creatuser', async (data, { rejectWithValue }) => {
+        try {
+
+            const res = await axios.post("http://localhost:3000/user", data)
+            const result = await res.data
+            return result
+
+        } catch (error) {
+            return rejectWithValue(error)
+        }
+    }
+)
+
+export const deleteuser = createAsyncThunk(
+    'deleteuser', async (id, { rejectWithValue }) => {
+        try {
+            const res = await axios.delete(`http://localhost:3000/user/${id}`)
+            const result = await res.data
+            return result
+        } catch (error) {
+            return rejectWithValue(error)
+        }
+    }
+)
+
+
+
 
 export const userSlice = createSlice({
-    name:"userDetails",
-    initialState:{
-        user : [],
-        loading : false,
-        error : ""
+    name: "userDetails",
+    initialState: {
+        user: [],
+        loading: false,
+        error: ""
     },
-    reducers:{
-        userPending :(state)=>{
+    reducers: {
+        userPending: (state) => {
             state.loading = true;
         },
-        userFullfiled : (state,action)=>{
+        userFullfiled: (state, action) => {
             state.loading = false,
-            state.user.push(action.payload)
+                state.user.push(action.payload)
         },
-        userReject : (state,action)=>{
-                state.loading = false,
+        userReject: (state, action) => {
+            state.loading = false,
                 state.error = action.payload
         }
     },
-    extraReducers:(builder)=>{
+    extraReducers: (builder) => {
         builder
-        // read data
-        .addCase(showuser.pending,(state)=>{
-            state.loading = true
-        })
-        .addCase(showuser.fulfilled,(state,action)=>{
-            state.loading = false;
-            state.user = action.payload
-        })
-        .addCase(showuser.rejected,(state,action)=>{
-            state.loading = false;
-            state.error = action.payload
-        })
+            // read data
+            .addCase(showuser.pending, (state) => {
+                state.loading = true
+            })
+            .addCase(showuser.fulfilled, (state, action) => {
+                state.loading = false;
+                state.user = action.payload
+            })
+            .addCase(showuser.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload
+            })
+            // new data
+            .addCase(creatuser.pending, (state) => {
+                state.loading = true
+            })
+            .addCase(creatuser.fulfilled, (state, action) => {
+                state.loading = false;
+                state.user.push(action.payload)
+            })
+            .addCase(creatuser.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload
+            })
+
+            // delete
+
+            .addCase(deleteuser.pending, (state) => {
+                state.loading = true
+            })
+
+            .addCase(deleteuser.fulfilled, (state, action) => {
+                state.loading = false;
+                state.user = state.user.filter((data,index)=> index !== action.payload)
+            })
+
+            .addCase(deleteuser.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload
+            })
     }
 })
 
-export const {userPending,userFullfiled,userReject} = userSlice.actions;
+export const { userPending, userFullfiled, userReject } = userSlice.actions;
 
 export default userSlice.reducer;

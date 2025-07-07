@@ -1,37 +1,30 @@
 {
-    "user":[
-        {
-            "id":1,
-            "name":"Anas",
-            "email":"Anas@gmail.com",
-            "password":"123456"
-        },
-        {
-            "id":2,
-            "name":"aniket",
-            "email":"aniket@gmail.com",
-            "password":"1234"
-        },
-        {
-            "id":3,
-            "name":"harsh",
-            "email":"harsh@gmail.com",
-            "password":"123456"
-        }
-    ],
-    "admin":[
-        {
-            
-            "id":1,
-            "name":"admin",
-            "email":"admin@gmail.com",
-            "password":"123456"
-        },
-        {    
-            "id":2,
-            "name":"subadmin",
-            "email":"subadmin@gmail.com",
-            "password":"123456"
-        }
-    ]
+  "user": [
+    {
+      "id": "1751887259463",
+      "name": "jigar sir",
+      "email": "admin@gmail.com",
+      "password": "sad"
+    },
+    {
+      "id": "1751887266397",
+      "name": "het patel",
+      "email": "harsh@gmail.com",
+      "password": ""
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "name": "subadmin",
+      "email": "subadmin@gmail.com",
+      "password": "123456"
+    }
+  ]
 }
