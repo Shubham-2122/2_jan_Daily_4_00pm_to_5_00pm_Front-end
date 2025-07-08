@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { deleteuser, showuser } from '../Slicedata/userSlice'
+import { Link } from 'react-router-dom'
 
 function Read() {
 
     const users = useSelector((state) => state.users.user)
 
-    console.log(users)
+    // console.log(users)
 
     const dispatch = useDispatch()
 
@@ -37,7 +38,7 @@ function Read() {
                                     <td>{data.email}</td>
                                     <td>
                                         <button className='btn btn-info'>View</button>
-                                        <button className='btn btn-success mx-2' >Edit</button>
+                                        <Link to={`/edit/${data.id}`} className='btn btn-success mx-2'>Edit</Link>
                                         <button className='btn btn-danger' onClick={()=>dispatch(deleteuser(data.id))}>Delete</button>
                                     </td>
                                 </tr>

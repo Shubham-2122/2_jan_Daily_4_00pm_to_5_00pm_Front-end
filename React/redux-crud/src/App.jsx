@@ -3,6 +3,7 @@ import Read from './Component/Read'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Create from './Component/Create'
 import Navbar from './Component/Navbar'
+import Update from './Component/Update'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Read />} />
         <Route path='/new' element={<Create />} />
+        <Route path='/edit/:id' element={<Update />} />
       </Routes>
     </div>
     </BrowserRouter>

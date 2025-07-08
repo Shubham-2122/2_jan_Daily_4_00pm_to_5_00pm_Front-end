@@ -10,7 +10,19 @@
       "id": "1751887266397",
       "name": "het patel",
       "email": "harsh@gmail.com",
-      "password": ""
+      "password": "12345678"
+    },
+    {
+      "id": "1751971602216",
+      "name": "sujal",
+      "email": "shubhamjadav.tops@gmail.com",
+      "password": "asdas"
+    },
+    {
+      "id": "1751972955562",
+      "name": "shubham",
+      "email": "shubhamjadav.tops@gmail.com",
+      "password": "adas"
     }
   ],
   "admin": [
